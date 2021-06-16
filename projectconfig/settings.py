@@ -77,8 +77,11 @@ WSGI_APPLICATION = 'projectconfig.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'restfulapiDB',
+        'USER': 'postgres',
+        'PASSWORD': 'fefa4fb96d834a539044cab3607ad265',
+        'HOST': 'localhost'
     }
 }
 
